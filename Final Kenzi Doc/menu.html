@@ -2,15 +2,39 @@
 	<head>
 		<title>Menu Page</title>
 		<style>
-			
+			.Tittle{
+				color: blue;
+				font-size: 30;
+				text-align: center;
+			}
+			.GRID{
+				display:grid;
+				grid-template-columns:10% 45% 45%;
+				grid-column-gap: 2em;
+				grid-row-gap: 2em;
+				grid-auto-rows: minmax(100px, auto);
+			}
+			.GRID > div{
+				background-color: #31618f;
+				color: #ff6600;
+				font-size: 30;
+			}
+			.GRID > div:nth-child(odd){
+				background-color: #9c2f53;
+			}		
 			
 		</style>
 		
 	</head>
 	<body>
-		<p>
-		</p>
-		
+		<div class="Tittle">
+			<h1>
+				Menu
+			</h1>
+		</div>
+		<div class="GRID">
+
+		</div>	
 	</body>
 
 </html>
